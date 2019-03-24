@@ -166,7 +166,6 @@ class Polyline(object):
             self.v[index:], self.v[0:index], axis=0
         )
         result = Polyline(v=rotated_v, closed=True)
-
         if ret_edge_mapping:
             edge_mapping = np.append(
                 np.arange(index, len(self.v)),
