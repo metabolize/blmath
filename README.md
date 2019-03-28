@@ -8,17 +8,24 @@ metablmath
 [![last commit](https://img.shields.io/github/last-commit/metabolize/blmath.svg?style=flat-square)][commits]
 [![open pull requests](https://img.shields.io/github/issues-pr/metabolize/blmath.svg?style=flat-square)][pull requests]
 
-This is an active fork of [blmath][upstream], a collection math-related utilities developed at Body Labs.
+This is an active fork of [blmath][upstream], a collection math-related
+utilities developed at Body Labs. It is in the process of being retired. The
+following components have been moved into their own libraries:
 
-The fork's goals are moderate:
+- `blmath.numerics.vx` has been moved to [`vg`][vg]
+- Most of `blmath.geometry` has been moved to [`polliwog`][polliwog]
 
-- Keep the library working in current versions of Python and other tools.
+[vg]: https://github.com/lace/vg
+[polliwog]: https://github.com/lace/polliwog
+
+The fork's goals are modest:
+
+- Find a new homw for most of the useful bits of code.
 - Make bug fixes.
 - Provide API stability and backward compatibility with the upstream version.
-- Add additional functionality which relates well to what is here.
-- Respond to community contributions.
+- Wind down.
 
-It's used by related forks such as [lace][].
+blmath is used by related forks such as [lace][].
 
 [upstream]: https://github.com/bodylabs/blmath
 [circle]: https://circleci.com/gh/metabolize/blmath
